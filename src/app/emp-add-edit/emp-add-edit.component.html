@@ -6,16 +6,16 @@
     <div class="row">
         <mat-form-field appearance="outline">
             <mat-label>Usuario</mat-label>
-            <input matInput placeholder="usuario">
+            <input matInput placeholder="usuario" name="usuario">
         </mat-form-field>
         <mat-form-field appearance="outline">
             <mat-label>Password</mat-label>
-            <input matInput type="password">
+            <input matInput type="password" name="password">
         </mat-form-field>
     </div>
 </div>
 
 <div mat-dialog-actions>
-    <button mat-raised-button color="primary">Enviar</button>
-    <button mat-raised-button>Cancelar</button>
+    <button mat-raised-button color="primary" >Enviar</button>
+    <button mat-raised-button (click)="close()">Cancelar</button>
 </div>
