@@ -10,6 +10,7 @@ import {MatButtonModule} from '@angular/material/button';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component'
 import {MatDialogModule} from '@angular/material/dialog'
 import {MatInputModule} from '@angular/material/input';
+import {NgForm, FormsModule} from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import {MatInputModule} from '@angular/material/input';
     MatButtonModule,
     MatDialogModule,
     MatInputModule,
+    FormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

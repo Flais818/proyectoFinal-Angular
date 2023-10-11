@@ -1,17 +1,19 @@
 import { Component, OnInit } from '@angular/core';
-import {NgForm} from '@angular/forms'
+import {NgForm, FormsModule} from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+
+
 @Component({
   selector: 'app-emp-add-edit',
   templateUrl: './emp-add-edit.component.html',
   styleUrls: ['./emp-add-edit.component.css']
 })
+
 export class EmpAddEditComponent implements OnInit{
 
   constructor(private dialogRef: MatDialog) {}
 
   ngOnInit(): void {
-    
   }
 
   login(form:NgForm) {

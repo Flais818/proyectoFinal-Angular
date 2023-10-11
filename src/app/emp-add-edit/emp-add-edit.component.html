@@ -2,20 +2,24 @@
     <h1>Login</h1>
 </div>
 
-<div mat-dialog-content>
-    <div class="row">
-        <mat-form-field appearance="outline">
-            <mat-label>Usuario</mat-label>
-            <input matInput placeholder="usuario" name="usuario">
-        </mat-form-field>
-        <mat-form-field appearance="outline">
-            <mat-label>Password</mat-label>
-            <input matInput type="password" name="password">
-        </mat-form-field>
-    </div>
-</div>
+<form #form="ngForm">
 
-<div mat-dialog-actions>
-    <button mat-raised-button color="primary" >Enviar</button>
-    <button mat-raised-button (click)="close()">Cancelar</button>
-</div>
+    <div mat-dialog-content>
+        <div class="row">
+            <mat-form-field appearance="outline">
+                <mat-label>Usuario</mat-label>
+                <input matInput placeholder="usuario" name="usuario">
+            </mat-form-field>
+            <mat-form-field appearance="outline">
+                <mat-label>Password</mat-label>
+                <input matInput type="password" name="password">
+            </mat-form-field>
+        </div>
+    </div>
+    
+    <div mat-dialog-actions>
+        <button mat-raised-button color="primary" (click)="login(form)">Enviar</button>
+        <button mat-raised-button (click)="close()">Cancelar</button>
+    </div>    
+
+</form>
