@@ -1,3 +1,8 @@
+.titulo{
+    position: center;
+    margin-left: 46%;
+}
+
 .slide {
     margin-left: 45%;
 }
@@ -7,6 +12,20 @@
 }
 
 .botones {
-    margin-left: 43%;
+    margin-left: 42%;
 }
 
+#agregar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#eliminar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+#modificar {
+    margin-left: 10px;
+    margin-right: 10px;
+}
