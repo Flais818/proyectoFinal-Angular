@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import {MatRadioModule, MatRadioButton, MatRadioGroup} from '@angular/material/radio';
 import { MatDialogModule } from '@angular/material/dialog';
 import { AppComponent } from '../app.component';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-crud',
@@ -15,7 +16,7 @@ export class CrudComponent  {
   nombre:string = 'postre';
 
 
-  constructor() {
+  constructor(private router: Router) {
     this.arrUrl = []
   }
 
@@ -57,5 +58,9 @@ export class CrudComponent  {
     // Uso de coalescencia en caso de que la variable sea nula
     this.fuente = nuevaFuente ?? 'Fallo';
 
+  }
+
+  regresarAHome() {
+    this.router.navigate(['/']);
   }
 }
