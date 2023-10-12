@@ -13,6 +13,7 @@ import {MatDialogModule} from '@angular/material/dialog'
 import {MatInputModule} from '@angular/material/input';
 import {NgForm, FormsModule, ReactiveFormsModule} from '@angular/forms';
 import { CrudComponent } from './crud/crud.component';
+import {MatRadioModule, MatRadioButton, MatRadioGroup} from '@angular/material/radio';
 
 @NgModule({
   declarations: [

@@ -4,6 +4,27 @@
 
 <div class="slide">
 
+    <input type="radio" name="imagen" hidden>
+        <label>
+            <img src={{fuente}} 
+            class="imagenes" alt={{nombre}}>
+        </label>
     
+</div>
 
+<br><br>
+
+<div class="botones">
+
+    <button class="btn btn-primary" (click)="agregar()">
+        Agregar
+    </button>
+
+    <button class="btn btn-danger" (click)="eliminar()">
+        Eliminar
+    </button>
+
+    <button class="btn btn-secondary" (click)="modificar()">
+        Modificar
+    </button>
 </div>
