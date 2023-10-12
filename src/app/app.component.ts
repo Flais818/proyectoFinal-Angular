@@ -10,6 +10,7 @@ import { MatDialog } from '@angular/material/dialog';
 import { EmpAddEditComponent } from './emp-add-edit/emp-add-edit.component';
 
 
+
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -25,16 +26,3 @@ openAddEditEmpForm() {
 }
 
 }
-
-
- /*
-const appRoutes:Route=[
-  {path:'login', component:LoginComponent}
-];
-
-@NgModule({
-  declarations: [
-    LoginComponent
-  ]
-});
-*/
