@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, ViewChild } from '@angular/core';
 import {NgForm, FormsModule} from '@angular/forms';
 import { MatDialog } from '@angular/material/dialog';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-emp-add-edit',
@@ -13,7 +14,7 @@ export class EmpAddEditComponent{
   user:string='';
   password:string='';
   
-  constructor(private dialogRef: MatDialog) {}
+  constructor(private dialogRef: MatDialog, private router: Router) {}
 
   ngOnInit(): void {
   }
@@ -27,10 +28,11 @@ export class EmpAddEditComponent{
       alert('Usuario o password incorrecto')
     }
     else {
-      alert("Ingresaste como admin")
+      //alert("Ingresaste como admin")
     }
-    //alert(this.user);
+    this.dialogRef.closeAll();
     
+    this.router.navigate(['/crud']);
   }
 
   close () {
